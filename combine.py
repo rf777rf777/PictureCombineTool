@@ -98,12 +98,12 @@ def main(pictureFloder = 'Picture', signFloder = 'SignPicture', resultFloder = '
 
     #巡覽照片資料夾
     for picture in os.listdir(pictureFloder_path):
-        if picture.endswith(acceptFormat):
+        if (picture.lower()).endswith(acceptFormat):
             pictureList.append(picture)
     
     #巡覽簽名檔案資料夾
     for sign in os.listdir(signFloder_path):
-        if sign.endswith(acceptFormat):
+        if (sign.lower()).endswith(acceptFormat):
             signList.append(sign)
 
     #找不到照片與簽名檔
