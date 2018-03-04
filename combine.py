@@ -21,6 +21,23 @@ def blendPicture(pictureData,signData,resultFloder):
     for image in pictureNameList:   
 
         imageA = Image.open('{0}/{1}'.format(pictureFloder,image))
+        #檢查圖片exif中的Orientation
+        if hasattr(imageA, '_getexif'):
+            orientation = 0x0112
+            exif = imageA._getexif()
+            if exif is not None and orientation in exif.keys():
+                
+                orientation = exif[orientation]
+                
+                rotations = {
+                    3: Image.ROTATE_180,
+                    6: Image.ROTATE_270,
+                    8: Image.ROTATE_90
+                }
+                if orientation in rotations.keys():
+                    imageA = imageA.transpose(rotations[orientation])
+                
+
         imageA = imageA.convert('RGBA')
         widthA , heightA = imageA.size
         
