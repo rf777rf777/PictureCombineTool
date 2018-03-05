@@ -23,9 +23,12 @@ An application to blend a sign picture to many other photos.
 
 * [Pillow - ver5.0.0](https://pypi.python.org/pypi/Pillow/5.0.0).
 
+## Article
+* [Python：用 PIL 製作影像合成工具](https://medium.com/@Syashin/python-%E7%85%A7%E7%89%87-%E7%B0%BD%E5%90%8D%E6%AA%94%E5%9C%96%E7%89%87%E5%90%88%E6%88%90%E5%B7%A5%E5%85%B7-e4df88f99994) 
+
 ## Note
 + This simple application is built with `python3.6` .
-+ It is recommended to run in windows or osx .
++ It is recommended to run in `windows` or `osx` .
 
 ## License
 MIT
