@@ -1,0 +1,7 @@
+# 檔案名稱 .gitignore
+
+# 忽略pyinstaller 產生的額外東東 
+/__pycache__/
+/build/
+/Combine/
+combine.spec
