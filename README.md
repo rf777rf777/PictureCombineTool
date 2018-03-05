@@ -26,3 +26,6 @@ An application to blend a sign picture to many other photos.
 ## Note
 + This simple application is built with `python3.6` .
 + It is recommended to run in windows or osx .
+
+## License
+MIT
