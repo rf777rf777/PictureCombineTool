@@ -7,8 +7,15 @@ def blendPicture(pictureData,signData,resultFloder):
 
     #signData解構
     signFloder,signName = list(signData.keys())[0] , list(signData.values())[0]
-    #sign圖片開啟並轉成RGBA格式
-    imageB = Image.open('{0}/{1}'.format(signFloder,signName))
+    
+    #sign圖片開啟
+    try:
+        imageB = Image.open('{0}/{1}'.format(signFloder,signName))
+    except Exception as e:
+        print('#程式已停止，"{0}" 讀取錯誤\n#錯誤訊息：{1}'.format(signName,e))
+        return
+
+    #照片轉成RGBA格式                
     imageB = imageB.convert('RGBA')
     
     #pictureData解構
@@ -17,56 +24,60 @@ def blendPicture(pictureData,signData,resultFloder):
     #完成度參數
     complete = 0
     
-    #照片開啟並轉成RGBA格式
+    #照片開啟
     for image in pictureNameList:   
+        try:
+            imageA = Image.open('{0}/{1}'.format(pictureFloder,image))
+            #檢查圖片exif中的Orientation
+            if hasattr(imageA, '_getexif'):
+                orientation = 0x0112
+                exif = imageA._getexif()
+                if exif is not None and orientation in exif.keys():
+                    
+                    orientation = exif[orientation]
+                    
+                    rotations = {
+                        3: Image.ROTATE_180,
+                        6: Image.ROTATE_270,
+                        8: Image.ROTATE_90
+                    }
+                    if orientation in rotations.keys():
+                        imageA = imageA.transpose(rotations[orientation])
+                    
+            #照片轉成RGBA格式                
+            imageA = imageA.convert('RGBA')
+            widthA , heightA = imageA.size
+            
+            #調整簽名檔圖片大小
+            imageB_edit = resizePicture(imageA,imageB) 
+            widthB , heightB = imageB_edit.size
 
-        imageA = Image.open('{0}/{1}'.format(pictureFloder,image))
-        #檢查圖片exif中的Orientation
-        if hasattr(imageA, '_getexif'):
-            orientation = 0x0112
-            exif = imageA._getexif()
-            if exif is not None and orientation in exif.keys():
-                
-                orientation = exif[orientation]
-                
-                rotations = {
-                    3: Image.ROTATE_180,
-                    6: Image.ROTATE_270,
-                    8: Image.ROTATE_90
-                }
-                if orientation in rotations.keys():
-                    imageA = imageA.transpose(rotations[orientation])
-                
+            #建立一張新的透明圖片當底圖
+            resultPicture = Image.new('RGBA', imageA.size, (0, 0, 0, 0))
+            
+            #把照片貼上去
+            resultPicture.paste(imageA,(0,0))
+            
+            #照片右下角位置參數
+            right_bottom = (widthA - widthB , heightA - heightB)
+            
+            #把簽名檔貼在照片右下角
+            resultPicture.paste(imageB_edit , right_bottom , imageB_edit)
+            
+            #把圖片再轉成RGB好存成jpg
+            resultPicture = resultPicture.convert('RGB')
 
-        imageA = imageA.convert('RGBA')
-        widthA , heightA = imageA.size
-        
-        #調整簽名檔圖片大小
-        imageB_edit = resizePicture(imageA,imageB) 
-        widthB , heightB = imageB_edit.size
+            #儲存新照片
+            resultPicture.save("{0}/{1}_{2}.jpg".format(resultFloder,image.split('.')[0],signName.split('.')[0]))
+            
+            #完成度顯示
+            complete += 1
+            sys.stdout.write("\r已完成 : ( %s / %s )" % (complete,len(pictureNameList)))
+            sys.stdout.flush()
 
-        #建立一張新的透明圖片當底圖
-        resultPicture = Image.new('RGBA', imageA.size, (0, 0, 0, 0))
-        
-        #把照片貼上去
-        resultPicture.paste(imageA,(0,0))
-        
-        #照片右下角位置參數
-        right_bottom = (widthA - widthB , heightA - heightB)
-        
-        #把簽名檔貼在照片右下角
-        resultPicture.paste(imageB_edit , right_bottom , imageB_edit)
-        
-        #把圖片再轉成RGB好存成jpg
-        resultPicture = resultPicture.convert('RGB')
-
-        #儲存新照片
-        resultPicture.save("{0}/{1}_{2}.jpg".format(resultFloder,image.split('.')[0],signName.split('.')[0]))
-        
-        #完成度顯示
-        complete += 1
-        sys.stdout.write("\r已完成 : ( %s / %s )" % (complete,len(pictureNameList)))
-        sys.stdout.flush()
+        except Exception as e:
+            print('#程式已停止，"{0}" 讀取錯誤\n#錯誤訊息：{1}'.format(image,e))
+            return
 
     print("\n\n\r=== 照片合成已完成 ===")
 
