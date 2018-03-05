@@ -8,7 +8,7 @@ An application to blend a sign picture to many other photos.
 
 1. Make sure your python environment has been installed with packages : [Pillow](https://pypi.python.org/pypi/Pillow/5.0.0).
 
-2. Download/Clone.
+2. Download/Clone this project .
 
 3. There're 3 picture folders in this project
   + [Picture] : Put your photos here .
@@ -17,7 +17,7 @@ An application to blend a sign picture to many other photos.
 
 4. Use command line to run ! 
   + Run your python environment.
-  + Go to the folder where this project & type `python combine.py` & press <Enter>.
+  + Go to the folder where this project & type `python combine.py` & press "Enter".
 
 ## Library or API Reference
 
