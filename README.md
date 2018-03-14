@@ -39,7 +39,7 @@
 ## :fountain_pen: License
 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89)
 
-## :memo:
+## :memo: 備註
 
 應用程式版下載：
 
