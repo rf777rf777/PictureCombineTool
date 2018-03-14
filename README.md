@@ -26,20 +26,8 @@
    來安裝需要的 Packages。
 
 ## :blue_book: 使用方法
-...以下待修正 施工中...
 
-1. Make sure your python environment has been installed with packages : [Pillow](https://pypi.python.org/pypi/Pillow/5.0.0).
-
-2. Download/Clone.
-
-3. There're 3 picture folders in this project
-  + [Picture] : Put your photos here .
-  + [SignPicture] : Put your sign picture here .(Only one)
-  + [ResultPicture] : Where result pictures saved .
-
-4. Use command line to run ! 
-  + Run your python environment.
-  + Go to the folder where this project & type `python combine.py` & press <Enter>.
+...施工中...
 
 ## :orange_book: 文章發表
 **Medium - [Python : 用 PIL 做影像處理(合成)](https://medium.com/@Syashin/python-%E7%85%A7%E7%89%87-%E7%B0%BD%E5%90%8D%E6%AA%94%E5%9C%96%E7%89%87%E5%90%88%E6%88%90%E5%B7%A5%E5%85%B7-e4df88f99994)**
@@ -48,5 +36,15 @@
 
 [Pillow - ver5.0.0](https://pypi.python.org/pypi/Pillow/5.0.0).
 
-## License
+## :fountain_pen: License
 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89)
+
+## :memo:
+
+應用程式版下載：
+
+  + macOS 版：https://nofile.io/f/baZKvwHRFCE
+
+  + Windows 版：https://nofile.io/f/q9oVkrtYttB
+
+內附說明，不需安裝Python即可使用。
