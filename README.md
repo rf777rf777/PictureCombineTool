@@ -1,11 +1,15 @@
 # PictureCombineTool
-![image](https://github.com/rf777rf777/PictureCombineTool
-/blob/master/HomePicture.png)
+![image](https://github.com/rf777rf777/PictureCombineTool/blob/master/HomePicture.png)
 ## :pencil2: 概述
 
-將簽名檔圖片與照片合成的 Terminal/Console 程式
+將簽名檔圖片與照片合成的 Terminal/Console 程式。
 
-## How to use ?
+## :closed_book: 特色
+  + 使用 PIL([Pillow](https://pypi.python.org/pypi/Pillow/5.0.0))，將已去背的簽名檔圖片與照片合成後輸出。
+  + [Picture]資料夾 : 放要進行合成的照片(可放多張)。
+  + [SignPicture]資料夾 : 放簽名檔圖片(只能放一張)。
+  + [ResultPicture]資料夾 : 結果輸出。
+
 
 1. Make sure your python environment has been installed with packages : [Pillow](https://pypi.python.org/pypi/Pillow/5.0.0).
 
