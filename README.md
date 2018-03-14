@@ -16,13 +16,12 @@
   
   2. Clone / Download 這個專案：
     
-        git clone https://github.com/rf777rf777/PictureCombineTool.git
-  
+    git clone https://github.com/rf777rf777/PictureCombineTool.git
   3. 在 Terminal/Console(cmd) 輸入 :
   
-        pip install -r requirements.txt
-
-    來安裝需要的 Packages。
+    pip install -r requirements.txt
+    
+        來安裝需要的 Packages。
 
 ## :blue_book: 使用方法
 ...以下施工中...
