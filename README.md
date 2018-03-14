@@ -1,4 +1,4 @@
-# PictureCombineTool
+# PictureCombineTool - 照片、簽名檔合成工具
 ![image](https://github.com/rf777rf777/PictureCombineTool/blob/master/HomePicture.png)
 ## :pencil2: 概述
 
@@ -21,7 +21,7 @@
   
     pip install -r requirements.txt
     
-        來安裝需要的 Packages。
+來安裝需要的 Packages。
 
 ## :blue_book: 使用方法
 ...以下施工中...
