@@ -6,11 +6,11 @@
 
 ## :closed_book: 特色
   + 使用 PIL - [Pillow](https://pypi.python.org/pypi/Pillow/5.0.0)，將已去背的簽名檔圖片與照片合成後輸出。
-  + :file_folder: *Picture* : 放要進行合成的照片(可放多張)。
-  + :file_folder: *SignPicture* : 放簽名檔圖片(只能放一張)。
-  + :file_folder: *ResultPicture* : 結果輸出。
-  + :file_folder: *Picture、SignPicture* 已放置範例圖片供嘗試。
-  + 本範例可在 *Windows* / *macOS* 環境下執行。
+  + :file_folder: Picture : 放要進行合成的照片(可放多張)。
+  + :file_folder: SignPicture : 放簽名檔圖片(只能放一張)。
+  + :file_folder: ResultPicture : 結果輸出。
+  + :file_folder: Picture、SignPicture 已放置範例圖片供嘗試。
+  + 本範例可在 Windows / macOS 環境下執行。
   
 
 ## :green_book: 套件安裝
@@ -18,10 +18,10 @@
   
 2. Clone / Download 這個專案：
     
-    git clone https://github.com/rf777rf777/PictureCombineTool.git
+        git clone https://github.com/rf777rf777/PictureCombineTool.git
 3. 在 Terminal / Console(cmd) 輸入 :
   
-    pip install -r requirements.txt
+        pip install -r requirements.txt
     
    來安裝需要的 Packages。
 
