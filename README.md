@@ -42,11 +42,11 @@
   + Go to the folder where this project & type `python combine.py` & press <Enter>.
 
 ## :orange_book: 文章發表
-[Python : 用 PIL 做影像處理(合成)](https://medium.com/@Syashin/python-%E7%85%A7%E7%89%87-%E7%B0%BD%E5%90%8D%E6%AA%94%E5%9C%96%E7%89%87%E5%90%88%E6%88%90%E5%B7%A5%E5%85%B7-e4df88f99994)
+**Medium - [Python : 用 PIL 做影像處理(合成)](https://medium.com/@Syashin/python-%E7%85%A7%E7%89%87-%E7%B0%BD%E5%90%8D%E6%AA%94%E5%9C%96%E7%89%87%E5%90%88%E6%88%90%E5%B7%A5%E5%85%B7-e4df88f99994)**
 
 ## :books: Library or API Reference
 
-* [Pillow - ver5.0.0](https://pypi.python.org/pypi/Pillow/5.0.0).
+[Pillow - ver5.0.0](https://pypi.python.org/pypi/Pillow/5.0.0).
 
 ## License
 [MIT](https://zh.wikipedia.org/wiki/MIT%E8%A8%B1%E5%8F%AF%E8%AD%89)
