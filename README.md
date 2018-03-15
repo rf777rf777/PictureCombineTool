@@ -17,12 +17,12 @@
   
 
 ## :green_book: 套件安裝
-1. 本程式執行的最佳環境為 : [Python3.X](https://www.python.org/downloads/)，請確認自己的 Python 版本。
+1. 本程式執行的最佳環境為：[Python3.X](https://www.python.org/downloads/)，請確認自己的 Python 版本。
   
 2. Clone / Download 這個專案：
     
         git clone https://github.com/rf777rf777/PictureCombineTool.git
-3. 在 Terminal / Console(cmd) 輸入 :
+3. 在 Terminal / Console(cmd) 輸入：
   
         pip install -r requirements.txt
     
@@ -36,15 +36,15 @@
 2. :file_folder: **SignPicture** 放入即將進行合成的簽名檔圖片，只能放**一張**。
 ![image](https://upload.cc/i1/2018/03/15/TW5tzx.png)
 
-3.在 Terminal / Console(cmd) 輸入 :
+3. 在 Terminal / Console(cmd) 輸入：
 
         python combine.py
 
 4. :file_folder: **ResultPicture** 執行程式後結果輸出在此。
 ![image](https://upload.cc/i1/2018/03/15/2OHCcl.png)
 
-5.範例結果，其一：
-![image](https://github.com/rf777rf777/PictureCombineTool/blob/master/ResultPicture/%E7%AF%84%E4%BE%8B%E5%9C%96%E7%89%87C_mySign.jpg)
+5. 範例結果，其一：
+![image](https://upload.cc/i1/2018/03/15/dwnqGz.jpg)
 
 ## :orange_book: 其它
 
