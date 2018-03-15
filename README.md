@@ -41,9 +41,11 @@
         python combine.py
 
 4. :file_folder: **ResultPicture** 執行程式後結果輸出在此。
+
 ![image](https://upload.cc/i1/2018/03/15/2OHCcl.png)
 
 5. 範例結果，其一：
+
 ![image](https://upload.cc/i1/2018/03/15/dwnqGz.jpg)
 
 ## :orange_book: 其它
