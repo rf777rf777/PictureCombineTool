@@ -16,7 +16,7 @@
   + 本範例可在 Windows / macOS 環境下執行。
   
 
-## :green_book: 套件安裝
+## :green_book: 安裝專案
 1. 本程式執行的最佳環境為：[Python3.X](https://www.python.org/downloads/)，請確認自己的 Python 版本。
   
 2. Clone / Download 這個專案：
@@ -47,7 +47,7 @@
 
 ![image](https://upload.cc/i1/2018/03/15/dwnqGz.jpg)
 
-## :orange_book: 其它
+## :orange_book: 其它參考
 
 應用程式版下載，內附說明，不需安裝Python即可使用：
   + macOS 版：https://nofile.io/f/baZKvwHRFCE
