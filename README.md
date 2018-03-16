@@ -36,7 +36,7 @@
 2. :file_folder: **SignPicture** 放入即將進行合成的簽名檔圖片，只能放**一張**。
 ![image](https://upload.cc/i1/2018/03/15/TW5tzx.png)
 
-3. 在 Terminal / Console(cmd) 輸入：
+3. 在 Terminal / Console (cmd) 輸入：
 
         python combine.py
 
